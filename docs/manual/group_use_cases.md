@@ -632,9 +632,10 @@ $ cat group.2.genesis | grep "id"
 # 已修改到    id=2
 
 # 将配置拷贝到各个节点
-$ cp node0/conf/group.2.genesis node1/conf/group.2.genesis
-$ cp node0/conf/group.2.genesis node2/conf/group.2.genesis
-$ cp node0/conf/group.2.genesis node3/conf/group.2.genesis
+$ cp group.2.genesis node0/conf/group.2.genesis
+$ cp group.2.genesis node1/conf/group.2.genesis
+$ cp group.2.genesis node2/conf/group.2.genesis
+$ cp group.2.genesis node3/conf/group.2.genesis
 
 # 重启各个节点
 $ bash stop_all.sh
